@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/038dec0714.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav> <!--define a block of navigation links// -->
+                <img src="images/Raywa Singh (1).png" class="logo">
+            
+            
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+            </ul>
+            <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+            
+        </nav>
+        <div class="header-text">
+            <p>Junior Software Engineer</p>
+            <h1>Hi, I'm <span>Raywa Singh</span>- <br>turning challenges <br>into innovative <br>solutions.
+            </h1>
+
+        </div>
+        </div>
+
+    </div>
+   <!--------about------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+            <div class="about-col-1">
+                <img src="images/About-removebg-preview (1).jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> About Me</h1>
+                <p>I am Raywa Singh, a passionate and versatile software engineer with a strong technical foundation in Java, Python, C++, C#, and TypeScript. 
+                   I have hands-on experience in developing full-stack web applications using HTML, CSS, JavaScript, ReactJS, Node.js, and Express.
+                   My expertise extends to cloud computing with AWS, database management with MySQL and MongoDB, version control using GIT, and machine learning. 
+                   I am dedicated to creating efficient and scalable solutions, demonstrated through my successful projects in various domains.</p>
+
+                   <div class="tab-titles">
+                   <p class="tab-links active-link" onclick="opentab('Skills')" >Skills</p>
+                   <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                   <p class="tab-links"onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li><span>Programming Languages</span><br> Java, Python, C++, C, C#, TypeScript </li>
+                    <li><span>Developer Tools</span><br>VS code, Android Studio, Unity  </li>
+                    <li><span>Web Technologies</span><br>  HTML, CSS, JavaScript, XML,
+                        React, Node.js </li>
+                    <li><span>Tools & Frameworks</span><br> Hadoop </li>
+                    <li><span>Cloud Computing Services</span><br> AWS EC2, AWS S3, MS Azure </li>
+                    <li><span>Database</span><br> NoSQL, MySQL, MongoDB, PostgreSQL </li>
+                    <li><span>Software Tools/Skills</span><br> Git, GitHub</li>
+                    <li><span>Operating Systems</span><br> Windows, Ubuntu (Linux OS), MacOS </li>
+
+                </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+                <ul>
+                    <li><span>Junior Software Developer Intern at Techlive Solutions</span><br>Jan-July 2024, India<br> ● Engineered full-stack solutions for a web development project, enhancing user experience and back-end functionality; resulted in a 20% boost
+                        in site traffic and a 35% increase in conversion rates<br>
+                        ● Conducted thorough code reviews and debugging, leading to a 40% reduction in bugs and a 25% increase in application performance,
+                        enhancing the overall user experience<br>
+                        ● Refined complex database queries, achieving a 45% improvement in processing times and reducing average page load time from 4.5 seconds to
+                        2.5 seconds<br>
+                        ● Integrated Firebase for authentication and real-time data; reduced login issues by 50% and improved data synchronization across platforms,
+                        leading to a 15% rise in user satisfaction<br> </li>
+                    <li><span>Game developer Intern at Miracle Studios</span><br>June-July 2023, India<br>● Spearheaded the initiation of a project involving the creation of diverse 3D objects and the implementation of player movement code within a
+                        collaborative team of three<br>
+                        ● Co-ordinated level development, integrating gameplay featured and enhancing user interaction<br>
+                        ● Implemented a ground check mechanism and modified a path follower script to create strategic walking enemies<br>
+                        ● Incorporated collectible coins, sounds, music, and designed start/end screens with a canvas and buttons </li>
+                    
+
+                </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>Thapar Institute of Engineering and Technology</span><br>July 2020 - July 2024, India<br>
+                         Bachelor of Computer Science and Engineering <br>
+                        Relevant Coursework: Software Engineering, Operating Systems, Algorithms, Artificial Intelligence, Database Systems, Computer Networks, Web Development, Mobile application Development, Cloud Computing 
+                    </li>
+        </div>
+    </div>
+</div>
+ <!--------Services------->
+ <div id="services"> 
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2> Web Development</h2>
+                <p> Crafting responsive and interactive user interfaces using HTML, CSS, JavaScript, and React. Building robust server-side applications with Node.js and integrating databases like MongoDB and MySQL.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile"></i>
+                <h2> Mobile App Development</h2>
+                <p>Creating seamless and user-friendly Android applications using Java, Kotlin, and Android Studio. Developing applications that work on both Android and iOS using frameworks like React Native. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2> Cloud Computing</h2>
+                <p>Deploying and managing applications on cloud platforms like AWS and Azure, including services like EC2 and S3. Designing scalable and resilient cloud architecture to handle growing user demands </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>Machine Learning</h2>
+                <p> Leveraging machine learning algorithms to analyze and interpret complex datasets. Building predictive models to solve real-world problems using Python libraries such as TensorFlow and Scikit-Learn.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+
+        </div>
+
+    </div>
+ </div>
+<!---- portfolio ------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/eventmangament.jpg">
+                <div class="layer">
+                    <h3> Event Management System</h3>
+                    <p>An intuitive platform designed to simplify event planning and management processes.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="images/First 3D Game.jpg">
+                <div class="layer">
+                    <h3> 3D GAME</h3>
+                    <P>3D game with strategic challenges. </P>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                
+                   
+
+            </div>
+            <div class="work">
+                <img src="images/blog.jpg">
+                 <div class="layer">
+                  <h3> Blog Hub</h3>
+                   <p>A curated collection of my thoughts and experiences.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                
+
+            </div>
+        </div>
+    </div>
+
+        <a href="#" class="btn">See more</a>
+        
+
+    </div>
+</div>
+<!-------contact--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title" >Contact Me</h1>
+                <p> <i class="fa-solid fa-envelope"></i>raywasingh.10@gmail.com</p>
+                <div class="social-icons">
+                <a href="https://www.linkedin.com/in/raywa-singh/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=" https://github.com/Raywa10"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/raywa.singh/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="images/Raywa Singh CV.pdf" download class="btn btn2"> Download CV</a>
+            </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                   <input type="email" name="Email" placeholder="Your Email" required>
+                   <textarea name="Message" rows="6"placeholder="Your Message"></textarea>
+                   <button type="submit" class="btn btn2"> Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>copyright © Raywa Singh <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+    <script>  
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+  
+    </script>
+
+    <script>
+var sidemenu = document.getElementById("sidemenu");
+function openmenu(){
+    sidemenu.style.right="0";
+}
+function closemenu(){
+    sidemenu.style.right="-200px";
+}
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzg7DHODqiJyVMohE7EqZD-nZqGPWMUyxAHNomAybGWfx-3e-VY-Zoj6s2yeLP0KOM/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML= "Message sent successfully"
+             setTimeout(function(){
+                msg.innerHTML= ""
+             },5000)
+             form.reset()
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+     
+</body>
+</html>
